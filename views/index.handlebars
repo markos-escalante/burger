@@ -3,3 +3,21 @@
 <img src="../public/assets/burger.png" alt="yummy burger">
 
 <h2>Burgers to Eat!</h2>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        <p>{{burger_name}}</p> <button id="change-devoured" type="submit"> Devour it!</button>
+    </li>
+    {{ /each }}
+</ul>
+
+<h2> Burgers Eaten! </h2>
+<ul>
+    {{#each burgers}}
+    {{each}}
+</ul>
+
+<h2> Add a Burger </h2>
+<form class="create-form">
+</form>
