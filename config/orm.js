@@ -67,4 +67,4 @@ const orm = {
     }
 }
 
-modeule.exports = orm;
+module.exports = orm;
