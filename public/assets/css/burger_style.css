@@ -1,0 +1,31 @@
+#yummyburger {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 10%;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+body {
+  background-color: #ffd364;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.burgerDev {
+  margin-left: 5px;
+}
+
+button {
+  margin-top: 5px;
+  text-align: center;
+  display: inline-block;
+  color: red;
+}
