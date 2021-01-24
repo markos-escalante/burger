@@ -2,22 +2,41 @@
 
 <img src="../public/assets/burger.png" alt="yummy burger">
 
-<h2>Burgers to Eat!</h2>
+<div>
+    <h2>Burgers to Eat!</h2>
 
-<ul>
-    {{#each burgers}}
-    <li>
-        <p>{{burger_name}}</p> <button id="change-devoured" type="submit"> Devour it!</button>
-    </li>
-    {{ /each }}
-</ul>
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>
+            <p>{{burger_name}}</p> <button id="change-devoured" type="submit"> Devour it!</button>
+        </li>
+        {{/unless}}
+        {{ /each }}
+    </ul>
+</div>
 
-<h2> Burgers Eaten! </h2>
-<ul>
-    {{#each burgers}}
-    {{each}}
-</ul>
+<div class="shift">
+    <h2> Burgers Eaten! </h2>
+    <ul>
+        {{#each burgers}}
+        {{if devoured}}
+        <li>
+            <p>{{burger_name}}</p>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
 
-<h2> Add a Burger </h2>
-<form class="create-form">
-</form>
+<div>
+    <h2> Add a Burger </h2>
+    <form class="create-form">
+        <label for="burgerForm">Burger Name:</label>
+        <input type="text" id="burgerForm" name="name">
+
+
+        <button type="submit">Add Burger</button>
+
+    </form>
+</div>
