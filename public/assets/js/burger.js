@@ -1,8 +1,8 @@
 $(function () {
-    $(".burgerDev").on("click", function () {
+    $("#burgerDev").on("click", function () {
 
         const id = $(this).data("id");
-    
+        console.log($(this));
         const devour = {
             devoured: true
         };
@@ -35,7 +35,7 @@ $(function () {
             data: newBurger
         }).then(() => {
             console.log("New burger has beeen created.");
-            location.reload();
+            // location.reload();
         });
 
 
